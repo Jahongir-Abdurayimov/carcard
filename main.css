@@ -1,0 +1,117 @@
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; 
+  src: url("./fonts/bigshouldersdisplayregular.woff2") format("woff2"), 
+       url("./fonts/bigshouldersdisplayregular.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; 
+  src: url("./fonts/bigshouldersdisplaybold.woff2") format("woff2"),
+       url("./fonts/bigshouldersdisplaybold.woff") format("woff"); 
+}
+
+
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; 
+  src: url("./fonts/lexenddecaregular.woff2") format("woff2"), 
+       url("./fonts/lexenddecaregular.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Lexend Deca", "Arial" ,sans-serif;
+  
+  
+  
+}
+img {
+  display: block;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.list-unstyle {
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+}
+.car-info-list {
+  display: inline-flex;
+  background-color: #e28625;
+  border-radius:8px;
+}
+.car-info-item {
+  width: 307px;
+  padding: 48px;
+  border-radius: 8px;
+  
+}
+.car-info-item:nth-child(2) {
+  background-color: #006971;
+}
+.car-info-item:nth-child(3) {
+  background-color: #004140;
+  border-radius: 0px 8px 8px 0px;
+}
+.car-item-logo {
+  margin-bottom: 35px;
+}
+.car-item-title {
+  margin: 0 0 25px;
+  color: #F2F2F2;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+ 
+}
+.car-item-desc {
+  margin: 0 0 83px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px; 
+  
+}
+.car-item-link {
+  padding: 11px 32px;
+  text-decoration-line: none;
+  background-color: #f2f2f2;
+  color:#e28625;
+  border: 2px solid transparent;
+  border-radius:25px;
+  
+}
+.car-item-link:hover {
+  color: #fff;
+  background-color:#e28625;
+  border: 2px solid #fff;
+}
+.car-info-item:nth-child(2)>.car-item-link {
+  color: #006971;
+}
+.car-info-item:nth-child(2)>.car-item-link:hover {
+  color: #f2f2f2;
+  background-color: #006971;
+  border: 2px solid #fff;
+}
+.car-info-item:nth-child(3)>.car-item-link {
+  color: #004140;
+}
+.car-info-item:nth-child(3)>.car-item-link:hover {
+  color: #f2f2f2;
+  background: #004140;
+}
